@@ -1,0 +1,69 @@
+/**
+ * Estilos da secção About (editorial).
+ * Co-localizados (antes estavam poluidos em hero.css — má prática corrigida).
+ */
+
+.about__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--layout-about-gap);
+}
+
+@media (min-width: 1024px) {
+  .about__layout {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.about__gallery {
+  width: 100%;
+}
+
+.about__gallery.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .about__gallery.grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__gallery {
+    width: 50%;
+  }
+}
+
+.about__content {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .about__content {
+    width: 50%;
+  }
+}
+
+.about__title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--color-brand-blue);
+  margin: 0 0 var(--content-gap-lg);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.01em;
+}
+
+.about__title em {
+  font-style: italic;
+  color: var(--color-brand-gold);
+}
+
+.about__text {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--content-gap-lg);
+  line-height: 1.7;
+}

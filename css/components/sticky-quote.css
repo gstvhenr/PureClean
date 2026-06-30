@@ -1,0 +1,67 @@
+/**
+ * CTA fixo «Orçamento rápido» — visível após ~300px de scroll (js/behaviors/sticky-scroll.js).
+ */
+
+.sticky-quote {
+  position: fixed;
+  left: 50%;
+  bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+  z-index: 39;
+  width: min(calc(100% - 2rem), 22rem);
+  transform: translateX(-50%) translateY(120%);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-emphasized);
+}
+
+.sticky-quote--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.sticky-quote__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-quote__btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .sticky-quote {
+    left: auto;
+    right: max(1.25rem, env(safe-area-inset-right, 0px));
+    bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+    width: auto;
+    transform: translateY(120%);
+  }
+
+  .sticky-quote--visible {
+    transform: translateY(0);
+  }
+
+  .sticky-quote__btn {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-quote {
+    transition: opacity var(--motion-duration-fast) var(--motion-ease-standard);
+  }
+
+  .sticky-quote--visible {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  @media (min-width: 768px) {
+    .sticky-quote--visible {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var host = location.hostname;
+      var repo = 'PureClean';
+      var prefix = '/' + repo;
+      var path = location.pathname;
+      if (!host.endsWith('.github.io')) return;
+      if (path === prefix) {
+        location.replace(prefix + '/' + location.search + location.hash);
+        return;
+      }
+      if (path.indexOf(prefix + '/') !== 0) return;
+      var base = document.createElement('base');
+      base.href = location.origin + prefix + '/';
+      document.head.insertBefore(base, document.head.firstChild);
+    })();
+  </script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="48x48">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- seo:sync-head -->
+  <title>Limpeza de estofos e limpezas domésticas em Lisboa e Margem Sul | PureClean</title>
+  <meta name="description" content="PureClean: estofos, tapetes, limpezas em casa, escritórios e urgências na Grande Lisboa e Margem Sul. Orçamento no WhatsApp antes de marcar.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#203240">
+  <link rel="canonical" href="https://purecleanpt.online/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:site_name" content="PureClean">
+  <meta property="og:title" content="Limpeza de estofos e limpezas domésticas em Lisboa e Margem Sul | PureClean">
+  <meta property="og:description" content="PureClean: estofos, tapetes, limpezas em casa, escritórios e urgências na Grande Lisboa e Margem Sul. Orçamento no WhatsApp antes de marcar.">
+  <meta property="og:url" content="https://purecleanpt.online/">
+  <meta property="og:image" content="https://purecleanpt.online/assets/brand/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Limpeza de estofos e limpezas domésticas em Lisboa e Margem Sul | PureClean">
+  <meta name="twitter:description" content="PureClean: estofos, tapetes, limpezas em casa, escritórios e urgências na Grande Lisboa e Margem Sul. Orçamento no WhatsApp antes de marcar.">
+  <meta name="twitter:image" content="https://purecleanpt.online/assets/brand/logo.png">
+<!-- /seo:sync-head -->
+  <link rel="apple-touch-icon" href="assets/brand/logo.png">
+
+  <link rel="preload" href="assets/brand/logo-transparent.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="assets/photos/generated/hero-poster.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="assets/fonts/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-serif-4-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="css/site.css" as="style">
+  <link rel="modulepreload" href="js/main.js">
+
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f6f5f2; color: #1f2937; }
+    .site-header { min-height: 6rem; }
+    .hero { min-height: 100dvh; background: #203240; }
+  </style>
+
+  <link rel="stylesheet" href="css/site.css">
+
+  <!-- seo:sync-jsonld -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://purecleanpt.online/#empresa",
+        "name": "PureClean",
+        "description": "PureClean: estofos, tapetes, limpezas em casa, escritórios e urgências na Grande Lisboa e Margem Sul. Orçamento no WhatsApp antes de marcar.",
+        "url": "https://purecleanpt.online/",
+        "image": "https://purecleanpt.online/assets/brand/logo.png",
+        "telephone": "+351960012634",
+        "priceRange": "€€",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Lisboa e Margem Sul"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lisboa",
+          "addressCountry": "PT"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de limpeza em Lisboa e Margem Sul",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Limpeza de estofos e tapetes"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Limpezas domésticas"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Limpeza de escritórios"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Limpeza urgente"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://purecleanpt.online/#website",
+        "url": "https://purecleanpt.online/",
+        "name": "PureClean",
+        "description": "Limpeza profissional em Lisboa e Margem Sul",
+        "inLanguage": "pt-PT",
+        "publisher": {
+          "@id": "https://purecleanpt.online/#empresa"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://purecleanpt.online/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A PureClean serve Lisboa e Margem Sul?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim — Lisboa, Margem Sul e zona metropolitana consoante a agenda. Indique a morada no WhatsApp e confirmamos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como pedir orçamento de limpeza?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No WhatsApp diga o tipo de trabalho, o tamanho aproximado do espaço e a data desejada. Enviamos preço antes de marcar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fazem limpeza de estofos e impermeabilização?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim: sofás, poltronas, tapetes e cortinas, com tratamento de nódoas e impermeabilização quando faz sentido."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto custa uma limpeza doméstica em Lisboa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Varia com a área e o estado da casa. Cada lar é diferente — pedimos detalhes no WhatsApp e enviamos valor antes de marcar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fazem limpeza de escritórios e lojas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, com visitas regulares ou pontuais; o horário combina-se consigo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Têm serviço de limpeza urgente?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quando há lugar na agenda, sim. Explique a situação no WhatsApp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Os produtos são seguros para crianças e animais?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usamos produtos profissionais e ajustamos se houver bebés, alergias ou animais em casa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual é a garantia após o serviço?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nas 24 horas seguintes, se algo ficar fora do combinado, contacte-nos — analisamos e corrigimos quando for da nossa responsabilidade."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<!-- /seo:sync-jsonld -->
+</head>
+<body>
+  <pc-site-header></pc-site-header>
+  <main id="conteudo-principal">
+    <pc-hero></pc-hero>
+    <pc-about></pc-about>
+    <pc-before-after></pc-before-after>
+    <pc-services></pc-services>
+    <pc-differentials></pc-differentials>
+    <pc-process></pc-process>
+    <pc-faq></pc-faq>
+    <pc-cta-banner></pc-cta-banner>
+  </main>
+  <pc-site-footer></pc-site-footer>
+  <pc-sticky-quote></pc-sticky-quote>
+  <pc-whatsapp-fab></pc-whatsapp-fab>
+
+  <noscript>
+    <div class="pc-container" style="padding:2rem 1rem">
+      <h2>PureClean, limpeza em Lisboa e Margem Sul</h2>
+      <p>Estofos, limpezas em casa, escritórios e urgências. Orçamento pelo
+        <a href="https://wa.me/351960012634">WhatsApp</a>.</p>
+      <p>
+        <a href="#servicos">Serviços</a> ·
+        <a href="#antes-depois">Antes e depois</a> ·
+        <a href="#sobre">Sobre</a> ·
+        <a href="#faq">Perguntas frequentes</a>
+      </p>
+    </div>
+  </noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

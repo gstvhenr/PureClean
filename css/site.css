@@ -1,0 +1,29 @@
+/**
+ * Entrada única de estilos do site estático.
+ * Ordem: tokens → base → utilitários → componentes.
+ */
+@import './tokens.css';
+@import './fonts.css';
+@import './base.css';
+@import './utilities.css';
+@import './motion.css';
+@import './components/icon.css';
+@import './components/button.css';
+@import './components/section.css';
+@import './components/card.css';
+@import './components/about.css';
+@import './components/services.css';
+@import './components/differentials.css';
+@import './components/process.css';
+@import './components/cta-banner.css';
+@import './components/header.css';
+@import './components/whatsapp-fab.css';
+@import './components/sticky-quote.css';
+@import './components/footer.css';
+@import './components/media-frame.css';
+@import './components/compare-slider.css';
+@import './components/before-after.css';
+@import './components/faq.css';
+@import './components/legal.css';
+@import './components/hero.css';
+@import './focus.css';

@@ -1,0 +1,67 @@
+@import './reset.css';
+
+:root {
+  color-scheme: light dark;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-accent: #0d9488;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f1f5f9;
+    --color-muted: #94a3b8;
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-accent: #2dd4bf;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+main {
+  width: min(42rem, 100% - 2rem);
+  margin-inline: auto;
+  padding: 4rem 0 6rem;
+}
+
+.brand-heading {
+  margin: 0;
+  line-height: 0;
+}
+
+.brand-logo {
+  display: block;
+  height: auto;
+  max-width: min(200px, 70vw);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-top: 1rem;
+  color: var(--color-muted);
+}
+
+.card {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+  border: 1px solid color-mix(in srgb, var(--color-muted) 25%, transparent);
+}
+
+.card strong {
+  color: var(--color-accent);
+}

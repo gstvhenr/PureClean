@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var host = location.hostname;
+      var repo = 'PureClean';
+      var prefix = '/' + repo;
+      var path = location.pathname;
+      if (!host.endsWith('.github.io')) return;
+      if (path === prefix) {
+        location.replace(prefix + '/' + location.search + location.hash);
+        return;
+      }
+      if (path.indexOf(prefix + '/') !== 0) return;
+      var base = document.createElement('base');
+      base.href = location.origin + prefix + '/';
+      document.head.insertBefore(base, document.head.firstChild);
+    })();
+  </script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="48x48">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Política de Privacidade | PureClean, Lisboa</title>
+  <meta name="description" content="Política de privacidade da PureClean, empresa de limpeza profissional em Lisboa.">
+  <meta name="robots" content="index, follow">
+  <!-- seo:sync-canonical -->
+  <link rel="canonical" href="https://purecleanpt.online/privacidade.html">
+<!-- /seo:sync-canonical -->
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="legal-shell">
+  <main class="legal-page pc-container">
+    <a class="legal-page__back" href="index.html">← Voltar ao site</a>
+    <h1>Política de Privacidade</h1>
+    <p class="legal-page__updated">Última atualização: junho de 2026</p>
+
+    <p>A <strong>PureClean</strong> respeita a sua privacidade. Esta política descreve como tratamos dados pessoais quando utiliza o nosso site ou contacta-nos para serviços de limpeza em Lisboa.</p>
+
+    <h2>Responsável pelo tratamento</h2>
+    <p>Entidade: PureClean (serviços de limpeza).<br>
+    Contacto: <a href="https://wa.me/351960012634">WhatsApp +351 960 012 634</a>.</p>
+
+    <h2>Dados que recolhemos</h2>
+    <ul>
+      <li>Dados enviados por si no WhatsApp ou por telefone (nome, morada, tipo de serviço, preferências de agendamento).</li>
+      <li>Dados técnicos mínimos de navegação no site (registos do servidor de alojamento, se aplicável).</li>
+    </ul>
+
+    <h2>Finalidade</h2>
+    <p>Utilizamos os dados para responder a pedidos de orçamento, planear e executar serviços de limpeza, faturação quando aplicável e comunicação relacionada com o serviço contratado.</p>
+
+    <h2>Conservação</h2>
+    <p>Conservamos os dados apenas pelo tempo necessário à prestação do serviço e obrigações legais aplicáveis.</p>
+
+    <h2>Os seus direitos</h2>
+    <p>Nos termos do RGPD, pode solicitar acesso, retificação ou eliminação dos seus dados contactando-nos pelo WhatsApp indicado acima.</p>
+
+    <h2>Alterações</h2>
+    <p>Podemos atualizar esta política; a versão vigente estará sempre nesta página.</p>
+  </main>
+</body>
+</html>

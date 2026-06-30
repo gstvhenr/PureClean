@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var host = location.hostname;
+      var repo = 'PureClean';
+      var prefix = '/' + repo;
+      var path = location.pathname;
+      if (!host.endsWith('.github.io')) return;
+      if (path === prefix) {
+        location.replace(prefix + '/' + location.search + location.hash);
+        return;
+      }
+      if (path.indexOf(prefix + '/') !== 0) return;
+      var base = document.createElement('base');
+      base.href = location.origin + prefix + '/';
+      document.head.insertBefore(base, document.head.firstChild);
+    })();
+  </script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="48x48">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Termos de Serviço | PureClean, Lisboa</title>
+  <meta name="description" content="Termos de serviço da PureClean, empresa de limpeza profissional em Lisboa.">
+  <meta name="robots" content="index, follow">
+  <!-- seo:sync-canonical -->
+  <link rel="canonical" href="https://purecleanpt.online/termos.html">
+<!-- /seo:sync-canonical -->
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="legal-shell">
+  <main class="legal-page pc-container">
+    <a class="legal-page__back" href="index.html">← Voltar ao site</a>
+    <h1>Termos de Serviço</h1>
+    <p class="legal-page__updated">Última atualização: junho de 2026</p>
+
+    <p>Estes termos regulam a contratação de serviços de limpeza profissional prestados pela <strong>PureClean</strong> em Lisboa e região.</p>
+
+    <h2>Orçamentos e agendamento</h2>
+    <p>Os orçamentos são indicativos com base na informação fornecida pelo cliente. O valor final pode ser ajustado após avaliação no local, sempre com acordo prévio. O agendamento confirma-se por mensagem (WhatsApp ou outro canal acordado).</p>
+
+    <h2>Execução do serviço</h2>
+    <p>O cliente deve garantir acesso ao espaço, eletricidade e água quando necessários. Deve informar sobre superfícies delicadas, alergias, animais ou restrições de produtos.</p>
+
+    <h2>Garantia</h2>
+    <p>Oferecemos garantia de satisfação nas 24 horas seguintes à conclusão do serviço, para divergências face ao acordado. Contacte-nos nesse prazo para reavaliação.</p>
+
+    <h2>Seguro</h2>
+    <p>A equipa opera com cobertura de responsabilidade civil, conforme apólice vigente da empresa.</p>
+
+    <h2>Cancelamento</h2>
+    <p>Cancelamentos devem ser comunicados com a maior antecedência possível. Reservamo-nos o direito de aplicar custos de deslocação em cancelamentos em cima da hora, quando aplicável.</p>
+
+    <h2>Contacto</h2>
+    <p>Questões sobre estes termos: <a href="https://wa.me/351960012634">WhatsApp +351 960 012 634</a>.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/**
+ * Estilos da secção de serviços.
+ * Co-localizado (antes em hero.css).
+ */
+
+.services-section__footer {
+  margin-top: var(--content-gap-xl);
+  text-align: center;
+}

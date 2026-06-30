@@ -1,0 +1,137 @@
+:root {
+  /* Cores oficiais da logomarca (únicas cores de marca) — ver DESIGN.md §2 */
+  --color-brand-blue: #203240;
+  --color-brand-gold: #d7b889;
+  /* UI derivada (não cores adicionais de logotipo) */
+  --color-brand-gold-light: color-mix(in srgb, var(--color-brand-gold) 88%, var(--color-brand-blue));
+  --color-brand-light: #f6f5f2;
+  --color-brand-dark: color-mix(in srgb, var(--color-brand-blue) 75%, black);
+
+  --color-text: #1f2937;
+  --color-text-muted: #4b5563;
+  --color-text-soft: #6b7280;
+  --color-text-on-dark: #f3f4f6;
+  --color-text-on-dark-muted: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-white: #ffffff;
+
+  --color-brand-blue-alpha-50: rgb(32 50 64 / 0.5);
+  --color-brand-gold-alpha-20: rgb(215 184 137 / 0.2);
+  --color-brand-gold-alpha-30: rgb(215 184 137 / 0.3);
+  --color-brand-gold-alpha-40: rgb(215 184 137 / 0.4);
+  --color-text-on-gold: rgb(32 50 64 / 0.8);
+  --color-text-on-gold-muted: rgb(32 50 64 / 0.7);
+  --color-media-surface: #fafbfc;
+
+  /* Alphas adicionais para substituir rgb hard-coded (premium follow-up) */
+  --color-brand-blue-alpha-05: rgb(32 50 64 / 0.05);
+  --color-white-alpha-10: rgb(255 255 255 / 0.10);
+
+  /* Verde WhatsApp: base oficial #25d366 escurecida ~12% para contraste com texto branco nos CTAs */
+  --color-whatsapp: #20b358;
+  --color-whatsapp-hover: #1a9949;
+  --color-whatsapp-alpha-15: rgb(32 179 88 / 0.15);
+  --color-whatsapp-alpha-25: rgb(32 179 88 / 0.25);
+  --color-whatsapp-alpha-40: rgb(32 179 88 / 0.4);
+
+  /* Cores oficiais de redes (ícones no rodapé e CTAs WhatsApp) — ver DESIGN.md §2 */
+  --color-facebook: #0866ff;
+  --color-facebook-hover: color-mix(in srgb, var(--color-facebook) 88%, black);
+  --color-instagram: #e4405f;
+  --color-instagram-hover: color-mix(in srgb, var(--color-instagram) 88%, black);
+
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+
+  /* Escala tipográfica editorial — mais contraste entre display e corpo */
+  --font-size-display: clamp(2.5rem, 5.5vw, 4rem);
+  --font-size-h2: clamp(1.875rem, 3.6vw, 2.75rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --leading-tight: 1.08;
+  --leading-snug: 1.18;
+  --leading-body: 1.6;
+  --tracking-eyebrow: 0.14em;
+
+  --container-max: 80rem;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --section-heading-max: 60rem;
+
+  --section-heading-gap: 4.5rem;
+  --layout-about-gap: 5rem;
+  --layout-hero-gap: clamp(2rem, 5vw, 4rem);
+
+  /* Espaçamentos premium (valores generosos mas controlados para estética high-end; atualizado 2026-06 + follow-up: hero full 100dvh com bloco centrado no meio do ecrã, par conteúdo left-aligned + foto centrado horizontalmente, conteúdo natural height centrado verticalmente à foto via align center no layout, trust sob os CTAs, design premium impecável elegante e equilibrado) */
+  --section-padding-y: clamp(5rem, 10vw, 8rem);
+  --card-padding: 2.5rem;
+  --grid-gap: 1.5rem;
+  --grid-gap-lg: 2rem;
+  /* Moldura do comparador na grelha de resultados (4 colunas em desktop) */
+  --before-after-cell-max-height: 48rem;
+  --before-after-cell-scale: 1;
+  --before-after-slot-aspect-ratio: 2034 / 4096;
+  --content-gap-sm: 0.75rem;
+  --content-gap: 1rem;
+  --content-gap-lg: 1.5rem;
+  --content-gap-xl: 2rem;
+  --hero-padding-bottom: clamp(1.5rem, 3vh, 2.5rem);
+  --hero-container-padding: clamp(2rem, 4vh, 3rem);
+  --hero-inline-gutter: clamp(1.5rem, 5.5vw, 2.75rem);
+  --hero-layout-max: 72rem;
+  --hero-column-text: 7fr;
+  --hero-column-photo: 3fr;
+  --hero-column-gap: clamp(1.25rem, 2.5vw, 2.25rem);
+  /* Largura do bloco textual na coluna 70%: entre “colado à foto” e vazio excessivo */
+  --hero-content-max: 44rem;
+  /* Escala da foto hero (sem crop): cabe na coluna 30% e na altura útil do ecrã */
+  --hero-photo-max-height: calc(100dvh - var(--header-height) - var(--hero-padding-bottom) - 4rem);
+  --faq-gap: 1rem;
+  --footer-padding-y: 4rem;
+  --brand-margin-bottom: 1.5rem;
+  --section-heading-margin: 2rem;
+
+  --header-height: 6rem;
+  --header-surface-at-top: color-mix(in srgb, var(--color-brand-blue) 82%, transparent);
+  --header-backdrop-blur: 10px;
+  --hero-min-height: 100dvh;
+  --hero-media-padding: 1.25rem;
+  --fab-size: 3.5rem;
+  --fab-safe-inline-end: calc(var(--fab-size) + 1.25rem + env(safe-area-inset-right, 0px));
+  --hero-media-inset-bg: var(--color-brand-dark);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Elevação neutra e discreta — premium minimal apoia-se em hairlines, não em sombras dramáticas */
+  --shadow-sm: 0 1px 2px rgb(15 19 26 / 0.04);
+  --shadow-md: 0 2px 8px -2px rgb(15 19 26 / 0.06);
+  --shadow-lg: 0 12px 28px -10px rgb(15 19 26 / 0.12);
+  --shadow-xl: 0 24px 48px -16px rgb(15 19 26 / 0.16);
+
+  /* Motion: curto, funcional e consistente em toda a landing */
+  --motion-duration-fast: 160ms;
+  --motion-duration-base: 240ms;
+  --motion-duration-slow: 420ms;
+  --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-distance-sm: 0.5rem;
+  --motion-stagger-step: 60ms;
+
+  /* Foco: o par dourado/navy mantém contraste em superfícies claras, escuras e douradas */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+  --focus-ring-color: var(--color-brand-gold);
+  --focus-ring-contrast: var(--color-brand-blue);
+  --focus-ring-shadow: 0 0 0 5px var(--focus-ring-contrast);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration-fast: 0ms;
+    --motion-duration-base: 0ms;
+    --motion-duration-slow: 0ms;
+    --motion-distance-sm: 0rem;
+    --motion-stagger-step: 0ms;
+  }
+}

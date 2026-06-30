@@ -1,0 +1,9 @@
+/**
+ * Estilos específicos do processo (timeline já em card.css).
+ * Co-localizado (antes em hero.css).
+ */
+
+.process-section__cta {
+  margin-top: var(--content-gap-xl);
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+---
+import { BRAND_LOGO_SRC, BRAND_NAME } from '../../consts';
+
+interface Props {
+  width?: number;
+  class?: string;
+}
+
+const { width = 180, class: className } = Astro.props;
+---
+
+<img
+  src={BRAND_LOGO_SRC}
+  alt={`Logomarca ${BRAND_NAME}`}
+  width={width}
+  class:list={['brand-logo', className]}
+  decoding="async"
+/>

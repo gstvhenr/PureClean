@@ -1,0 +1,158 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-fast) var(--motion-ease-standard);
+  text-align: center;
+}
+
+.btn--sm {
+  padding: 0.625rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.btn--md {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn--lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+.btn--primary {
+  background: var(--color-brand-gold);
+  color: var(--color-brand-blue);
+}
+
+.btn--primary:hover {
+  background: var(--color-brand-gold-light);
+}
+
+.btn--primary-on-gold {
+  background: var(--color-brand-blue);
+  color: var(--color-white);
+  box-shadow: var(--shadow-xl);
+}
+
+.btn--primary-on-gold:hover {
+  background: var(--color-brand-dark);
+}
+
+.btn--hero-primary {
+  min-height: 3.25rem;
+  padding: 1.125rem 2.75rem;
+  font-size: 1.1875rem;
+}
+
+.btn--hero-primary:hover {
+  background: var(--color-white);
+  color: var(--color-brand-blue);
+}
+
+/* Superfície verde WhatsApp (botões + FAB) — decoração partilhada */
+.whatsapp-cta-surface {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.whatsapp-cta-surface::before,
+.whatsapp-cta-surface::after {
+  content: '';
+  position: absolute;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.whatsapp-cta-surface::before {
+  width: 140%;
+  height: 140%;
+  top: -70%;
+  right: -45%;
+  background: var(--color-whatsapp-alpha-25);
+}
+
+.whatsapp-cta-surface::after {
+  width: 90%;
+  height: 90%;
+  bottom: -55%;
+  left: -35%;
+  background: var(--color-whatsapp-alpha-15);
+}
+
+.whatsapp-cta-surface > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn--whatsapp {
+  background: var(--color-whatsapp);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--whatsapp:hover {
+  background: var(--color-whatsapp-hover);
+  color: var(--color-white);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--color-brand-gold);
+  color: var(--color-brand-gold);
+  font-weight: 600;
+}
+
+.btn--outline:hover {
+  background: var(--color-brand-gold);
+  color: var(--color-brand-blue);
+}
+
+.btn--nav-cta {
+  background: var(--color-brand-gold);
+  color: var(--color-brand-blue);
+  padding: 0.625rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.btn--nav-cta:hover {
+  background: var(--color-brand-gold-light);
+}
+
+.btn--dark {
+  background: var(--color-brand-blue);
+  color: var(--color-white);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.btn--dark:hover {
+  background: var(--color-brand-dark);
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--color-brand-blue);
+  transition: color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.link-arrow:hover {
+  color: var(--color-brand-gold);
+}

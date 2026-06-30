@@ -1,0 +1,202 @@
+.site-footer {
+  background: var(--color-brand-dark);
+  color: var(--color-white);
+  padding-top: var(--footer-padding-y);
+  padding-bottom: var(--content-gap-lg);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: var(--grid-gap-lg);
+  grid-template-columns: 1fr;
+  margin-bottom: var(--footer-padding-y);
+}
+
+@media (min-width: 768px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.site-footer__brand-row {
+  display: flex;
+  align-items: center;
+  gap: var(--content-gap);
+  margin-bottom: var(--brand-margin-bottom);
+}
+
+.site-footer__logo {
+  height: 3rem;
+  width: auto;
+  max-width: 3rem;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.site-footer__brand-name {
+  font-family: var(--font-serif);
+  color: var(--color-brand-gold);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.site-footer__desc {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0 0 var(--content-gap-sm);
+}
+
+.site-footer__trust {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin: 0 0 var(--brand-margin-bottom);
+  opacity: 0.95;
+}
+
+.site-footer__social {
+  display: flex;
+  gap: var(--content-gap);
+}
+
+.site-footer__social-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-white-alpha-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    opacity var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.site-footer__social-link--whatsapp {
+  color: var(--color-whatsapp);
+}
+
+.site-footer__social-link--whatsapp:hover {
+  color: var(--color-whatsapp-hover);
+  background: var(--color-white-alpha-10);
+}
+
+.site-footer__social-link--facebook {
+  color: var(--color-facebook);
+}
+
+.site-footer__social-link--facebook:hover {
+  color: var(--color-facebook-hover);
+  background: var(--color-white-alpha-10);
+}
+
+.site-footer__social-link--instagram {
+  color: var(--color-instagram);
+}
+
+.site-footer__social-link--instagram:hover {
+  color: var(--color-instagram-hover);
+  background: var(--color-white-alpha-10);
+}
+
+.site-footer__heading {
+  color: var(--color-brand-gold);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--brand-margin-bottom);
+}
+
+.site-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer__list li + li {
+  margin-top: var(--content-gap-sm);
+}
+
+.site-footer__link {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.875rem;
+  transition: color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.site-footer__link:hover {
+  color: var(--color-brand-gold);
+}
+
+.site-footer__text {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.875rem;
+}
+
+.site-footer__contact-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.site-footer__contact-item--center {
+  align-items: center;
+}
+
+.site-footer__contact-item + .site-footer__contact-item {
+  margin-top: var(--content-gap);
+}
+
+.site-footer__contact-icon {
+  color: var(--color-brand-gold);
+  margin-top: 0.15rem;
+}
+
+.site-footer__bottom {
+  border-top: 1px solid var(--color-white-alpha-10);
+  padding-top: var(--footer-padding-y);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--content-gap);
+}
+
+@media (min-width: 768px) {
+  .site-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.site-footer__copy {
+  color: var(--color-text-on-dark-muted);
+  font-size: 0.875rem;
+  margin: 0;
+  text-align: center;
+}
+
+.site-footer__legal {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.site-footer__legal a {
+  color: var(--color-text-on-dark-muted);
+  transition: color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.site-footer__legal a:hover {
+  color: var(--color-white);
+}

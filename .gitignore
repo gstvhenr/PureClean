@@ -1,0 +1,44 @@
+# build output
+dist/
+_site/
+
+# Netlify CLI local state (não versionar)
+.netlify/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# browser test artifacts
+playwright-report/
+test-results/
+
+# GitIgnore
+gitignore/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# governança local / IDE (não publicar)
+.agent/
+.cursor/
+AGENTS.md
+DESIGN.md
+
+# Firebase / debug local
+.firebase/
+firebase-debug.log
+.playwright-mcp/
+.cursor/debug-*.log
+
+# macOS-specific files
+.DS_Store

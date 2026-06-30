@@ -1,0 +1,20 @@
+{
+  "name": "PureClean",
+  "short_name": "PureClean",
+  "icons": [
+    {
+      "src": "/brand/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#0d9488",
+  "background_color": "#f8fafc",
+  "display": "standalone"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pureclean",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 4321",
+    "start": "serve . -l 4321",
+    "preview": "serve . -l 4321",
+    "seo:sync": "node scripts/sync-seo.mjs",
+    "build:pages": "node scripts/prepare-pages.mjs",
+    "test:ui": "playwright test",
+    "test:ui:update": "playwright test --update-snapshots",
+    "test:images": "node --test tests/images/image-budgets.test.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "images:check": "node scripts/check-image-budgets.mjs",
+    "video:poster": "node scripts/extract-video-poster.mjs assets/video/hero.mp4 assets/photos/generated/hero-poster.webp 960",
+    "hosting:emulate": "npm run build:pages && npx -y firebase-tools@latest emulators:start --only hosting --project demo-pureclean",
+    "deploy:firebase": "npm run build:pages && npx -y firebase-tools@latest deploy --only hosting"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "serve": "^14.2.4",
+    "sharp": "^0.35.1"
+  }
+}
